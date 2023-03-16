@@ -12,3 +12,24 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('.gallery');
+
+images.forEach(image => {
+  const imageItem = document.createElement('li');
+  galleryEl.append(imageItem);
+  imageItem.insertAdjacentHTML(
+    'afterbegin',
+    `<img class="gallery__item" src=${image.url} alt=${image.alt})/>`
+  );
+});
+
+// //const ingredientsEl = document.querySelector('#ingredients');
+// console.log(ingredientsEl);
+
+// ingredients.forEach(ingredient => {
+//   const listItem = document.createElement('li');
+//   listItem.textContent = ingredient;
+//   listItem.classList.add('item');
+//   ingredientsEl.append(listItem);
+// });
