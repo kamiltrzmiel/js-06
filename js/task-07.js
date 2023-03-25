@@ -1,4 +1,5 @@
 const inputEl = document.getElementById('font-size-control');
+inputEl.value = 16;
 const outputEl = document.getElementById('text');
 
 inputEl.addEventListener('input', event => {
